@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+  "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<!-- Es nuestro número de versión para nuestra etiqueta. Puede ser el número 
+		que queramos -->
+	<tlibversion>1.0</tlibversion>
+	<!-- Es la versión de jsp que estamos utilizando -->
+	<jspversion>1.2</jspversion>
+	<!-- Es el prefijo con el que llamaremos a las etiquetas desde el jsp -->
+	<shortname>ct</shortname>
+	<!-- Es el nombre que queramos dar a nuestra librería de etiquetas. Hay 
+		varias posibilidades, como poner una direccion web -URI-, pero basta con 
+		poner un nombre que queramos -->
+	<uri>http://milibreria.aprenderjugando.com/jsp/ctag/mio</uri>
+	
+	<!-- Registramos nuestra etiqueta de prueba --> 
+	<tag>
+		<name>combito</name>
+		<tagclass>aprendamos.java.etiquetas.Etiqueta0</tagclass>
+	</tag>
+	
+	<!-- Registramos nuestra primera etiqueta -->
+	<tag>
+		<!-- Nombre del tag -->
+		<name>tag1</name>
+		<!-- Clase que procesa el tag -->
+		<tagclass>aprendamos.java.etiquetas.Etiqueta1</tagclass>
+		<!-- Define si el tag tiene cuerpo (jsp) o no (empty) -->
+		<bodycontent>empty</bodycontent>
+		<!-- Descripcción del tag -->
+		<info>Muestra un mensaje</info>
+	</tag>
+
+	<!-- Registramos nuestra segunda etiqueta -->
+	<tag>
+		<name>tag2</name>
+		<tagclass>aprendamos.java.etiquetas.Etiqueta2</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<attribute>
+			<!-- Nombre del parámetro -->
+			<name>veces</name>
+			<!-- Campo requerido -->
+			<required>true</required>
+			<!-- Para que el tag soporte expresiones JSP -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<!-- Registramos nuestra tercera etiqueta -->
+	<tag>
+		<name>tag3</name>
+		<tagclass>aprendamos.java.etiquetas.Etiqueta3</tagclass>
+		<attribute>
+			<name>color</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>texto</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tama</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<!-- Registramos nuestra cuarta etiqueta -->
+	<tag>
+		<name>tag4</name>
+		<tagclass>aprendamos.java.etiquetas.Etiqueta4</tagclass>
+	</tag>
+
+	<!-- Registramos nuestra quinta etiqueta -->
+	<tag>
+		<name>tag5</name>
+		<tagclass>aprendamos.java.etiquetas.Etiqueta5</tagclass>
+		<attribute>
+			<name>elementos</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+
+	<!-- Registramos nuestra sexta etiqueta -->
+	<tag>
+		<name>tag6</name>
+		<tagclass>aprendamos.java.etiquetas.Etiqueta6</tagclass>
+		<attribute>
+			<name>nombre</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>elementos</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>seleccion</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<!-- Registramos nuestra septima etiqueta -->
+	<tag>
+		<name>etiqueta7</name>
+		<tagclass>aprendamos.java.etiquetas.Etiqueta7</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra una fecha</info>
+		<attribute>
+			<name>fecha</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<!-- Registramos nuestra octava etiqueta -->
+	<tag>
+		<name>etiqueta8</name>
+		<tagclass>aprendamos.java.etiquetas.Etiqueta8</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>Imprime la inversa de la cadena</info>
+	</tag>
+
+	<!-- Registramos nuestra novena etiqueta -->
+	<tag>
+		<name>etiqueta9</name>
+		<tagclass>aprendamos.java.etiquetas.Etiqueta9</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra una Collection</info>
+		<attribute>
+			<name>data</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<!-- Registramos nuestra décima etiqueta -->
+	<tag>
+		<name>cboDistritos</name>
+		<tagclass>aprendamos.java.etiquetas.TagSelectDistritos</tagclass>
+		<attribute>
+			<name>nombre</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>elementos</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<!-- Registramos nuestra onceava etiqueta -->
+	<tag>
+		<name>cboUsuarios</name>
+		<tagclass>aprendamos.java.etiquetas.TagSelectUsuarios</tagclass>
+		<attribute>
+			<name>dist</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>letra</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<!-- Registramos nuestra doceava etiqueta -->
+	<tag>
+		<name>cboUsuarios2</name>
+		<tagclass>aprendamos.java.etiquetas.TagSelectUsuarios2</tagclass>
+		<attribute>
+			<name>fecnac</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

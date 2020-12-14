@@ -1,4 +1,4 @@
-# LP2-semana06b: CustomTag y jmesa
+# LP2-semana07a: CustomTag y jmesa
 
 En esta demo veremos unos ejemplos sencillos de como podemos crear nuestras propias etiquetas personalizadas, nuestras propias librerías para nuestros proyectos web java con servlets y jsp. Como sabemos en JSP es posible hacer una librería de clases java que hagan una especie de ampliación de las etiquetas posibles de html conocidos también como taglibs 
 
